@@ -1,0 +1,38 @@
+<ion-view view-title="Login">
+    <ion-content>
+        <div class="content">
+            <div class="">
+                <form name="loginForm" novalidate>
+                    <div class="row-center">
+                        <div class="list">
+                            <label class="item item-input item-floating-label">
+                                <span class="input-label">Usuário</span>
+                                <input type="text" placeholder="Usuário" required ng-model="user.name"/>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="row-center">
+                        <div class="list">
+                            <label class="item item-input item-floating-label">
+                                <span class="input-label">Senha</span>
+                                <input type="password" placeholder="Senha" required ng-model="user.password"/>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="row-center">
+                        <div class="list">
+                            <div class="padding">
+                                <button ng-disabled="loginForm.$invalid"
+                                         class="button button-block button-positive">
+                                    Entrar
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+        </div>
+    </ion-content>
+
+

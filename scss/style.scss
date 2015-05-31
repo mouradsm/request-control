@@ -1,0 +1,9 @@
+@import 'jeet/index';
+
+//@include edit;
+@include cf;
+
+.content {
+  margin-top: 10%;
+  @include center($max_width: 360px, $pad: 0);
+}

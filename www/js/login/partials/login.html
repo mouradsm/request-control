@@ -1,0 +1,27 @@
+<ion-view view-title="Login">
+    <ion-content>
+        <div class="content">
+            <div class="">
+                <form name="loginForm" novalidate>
+                    <div class="row-center">
+                        <username ng-model="user.name"></username>
+                    </div>
+                    <div class="row-center">
+                      <password ng-model="user.password"></password>
+                    </div>
+                    <div class="row-center">
+                        <div class="list">
+                            <div class="padding">
+                                <button ng-click="login()" ng-disabled="loginForm.$invalid"
+                                        class="button button-block button-positive">
+                                    Entrar
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </ion-content>
+</ion-view>
+
